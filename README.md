@@ -1,2 +1,7 @@
-# hyena-llama
-Hotswapping a llama attention layer with a Hyena convolution
+By saving the activations on just 400 samples from Llama 7B, a hyena operator can be trained which can be swapped in with a minimal drop in perplexity.
+
+Visual comparison
+![comparison of the attention outputs from the original and hyena op](attention.png)
+
+
+The minimally trained small Hyena op increases perplexity from 1.55 to 1.58. For comparison, replacing the attention output with all ones increases perplexity to 10.11, and skipping the attention layer increases perplexity to 1.78
