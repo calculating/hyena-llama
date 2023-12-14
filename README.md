@@ -1,6 +1,5 @@
 By saving the activations on just 400 samples from Llama 7B, a hyena operator can be trained which can be swapped in with a minimal drop in perplexity.
 
-Visual comparison
 ![comparison of the attention outputs from the original and hyena op](attention.png)
 
 
